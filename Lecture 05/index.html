@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Fields</title>
+</head>
+
+<body>
+    <h1>Forms and Input Fields</h1>
+    <!-- action takes the form info to the backend code file -->
+    <form action="app.js">
+        <!-- FOR ATTRIBUTE IS JUST FOR OUR'S SAKE -->
+        <label for="name">Name : </label>
+        <input placeholder="Enter your name" type="text" name="" id="" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email : </label>
+        <input type="email" name="" id="" required>
+
+        <br>
+        <br>
+
+        <label for="password">Password : </label>
+        <input type="password" name="" id="" required>
+
+        <br>
+        <br>
+
+        <label for="gender">Gender : </label>
+
+        <br>
+
+        <!-- name attribute is used to group the same catgeory things like gender, name="gender" in both radio buttons to make them the same -->
+        <label for="male">Male : </label>
+        <input type="radio" value="male" name="gender" required>
+
+        <label for="male">Female : </label>
+        <input type="radio" value="female" name="gender" required>
+
+        <br>
+        <br>
+
+        <label for="hobby">Hobby</label>
+        <br>
+
+        <input type="checkbox" value="Singing">
+        <label for="Singing">Singing</label>
+        <br>
+        <input type="checkbox" value="Dancing">
+        <label for="Dancing">Dancing</label>
+        <br>
+        <input type="checkbox" value="Writing">
+        <label for="Writing">Writing</label>
+
+        <br>
+        <br>
+
+        <label for="">Choose your city:  </label>
+        <br>
+        <select name="" id="">
+            <option value="">Delhi</option>
+            <option value="">Chandigrah</option>
+            <option value="">Dubai</option>
+            <option value="">Mumbai</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="dob">DOB: </label>
+        <input type="datetime-local">
+
+        <br>
+        <br>
+        <!-- Creaing buttons using two ways -->
+        <button>Submit</button>
+        <br>
+        <br>
+        <input type="submit" value="Post this Mf Form."> 
+        <!-- Whatever we write in the vale attribute filed, that is diplayed as the button title -->
+
+        <br>
+        <br>
+        <label for="">Tell me Something about yourself</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="4"></textarea>
+
+    </form>
+
+</body>
+
+</html>
