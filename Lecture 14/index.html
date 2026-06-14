@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Typography and Styling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2026/06/07/23/03/23-03-31-264_1280.jpg");
+            color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /*  covers the whole text content only */
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .bg {
+            /* background-color: pink; */
+
+        }
+
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        p {
+            /* font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 30px;
+            font-variant: inherit;
+            letter-spacing: 5px; */
+
+            /* color: rgba(rgb(199, 128, 128), rgb(94, 153, 94), rgb(34, 34, 177), 0.7); */
+
+        }
+
+        a {
+            text-decoration: none;
+            /* overline, underline */
+            /* SINCE CSS CODE IS EXECUTED LINE BY LINE, THE MOST RECENT PROPERTY IS APPLIED IN CASE OF SAME PROPERTY APPLIED AGAIN */
+            text-decoration: underline overline red dashed;
+            /* background-color: hwb(65 rgb(96, 46, 46) rgb(53, 14, 14)); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <p>This is lecture 14 where we will cover the font, line height, letter spacing, color, background-color</p>
+
+        <!-- CSS Fonts -->
+        <h1>CSS Fonts</h1>
+
+        <!-- Google FONTS -->
+
+        <!-- Font size, fon-weight, font-style, font-variant  -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat alias accusantium neque. Odit architecto
+            doloremque illum mollitia nisi vitae magni!</p>
+
+        <a href="">Yes, bro !</a>
+    </div>
+</body>
+
+</html>

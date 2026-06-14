@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Child Selectors */
+        /* .parent > p{
+            background-color: red;
+        } */
+
+        /* Descendant Selectors */
+        /* .parent p {
+            background-color: yellow;
+        } */
+
+        /* Universal Selector : Highest Priority */
+        /* *{
+            margin: 0;
+        } */
+        /* Pseudo Selectors */
+        /* li:first-child{
+            background-color: red;
+        }
+        li:last-child{
+            background-color: pink;
+        }
+        li:nth-child(2) {
+            background-color: black;
+            color: white;
+        } */
+        /* Anchor States */
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: blue;
+            /* being clicked on, unti it's released */
+        }
+        a:hover{
+            color: brown;
+        }
+
+        /* Pseudo-Elements */
+        .fancy::before{
+            /* What should be before this elt */
+            content: 🖌️;
+        }
+
+        .fancy::after{
+            content: 👌😘;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is lecture - 13 , CSS Selectors</h1>
+    <!-- Id is given higher priority as compared to the class selector and also the id needs to be unique, which means a unique id has to be given to only one element, not more than one elements can have the same id -->
+
+    <!-- Child Selector : Only applied to the immediate children, not to all the descendants -->
+     <div class="parent">
+        <p class="child">child-1</p>
+        <p class="child">child-2</p>
+        <div>
+            <p>Child-3</p>
+        </div>
+     </div>
+
+     <!-- Descendant Selector : Applied to all the descendants of the parent element -->
+
+
+     <!-- Pseudo Selectors -->
+      <ul>
+        <!-- First Child -->
+        <li>SpiderMan</li> 
+        <!-- Second Child -->
+        <li>SuperMan</li>
+        <li>BatMan</li>
+        <li>Thor</li>
+      </ul>
+
+      <a href="https://drive.google.com/drive/u/0/folders/1qIdyYsm8xdtWCx5lN_Hv3FqrqeAEPYkx" target="_blank">Normal Link</a>
+      <a href="https://drive.google.com/drive/u/0/folders/1qIdyYsm8xdtWCx5lN_Hv3FqrqeAEPYkx" target="_blank">Visited Link</a>
+      <a href="https://drive.google.com/drive/u/0/folders/1qIdyYsm8xdtWCx5lN_Hv3FqrqeAEPYkx" target="_blank">Hover Link</a>
+      <a href="https://drive.google.com/drive/u/0/folders/1qIdyYsm8xdtWCx5lN_Hv3FqrqeAEPYkx" target="_blank">Active Link</a>
+
+      <p class="fancy">Hello, my dear friends !</p>
+      
+</body>
+</html>

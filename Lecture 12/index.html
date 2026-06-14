@@ -1,0 +1,35 @@
+<!-- Inline, Internal, External Stylesheets and their priority order -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- just below title tag -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        p{
+            background-color: blue;
+        }
+        /* h2 {
+            background-color: crimson;
+        } */
+         h1{
+            background-color: chartreuse;
+         }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS : Highest Piority -->
+     <h1 style="background-color: yellow;">This is h1</h1>
+
+    <!-- Internal CSS -->
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ducimus?</p>
+
+    <!-- External CSS -->
+     <h2>Full Stack Web Development</h2>
+
+     <p>priority Order : Inline > Internal > External</p>
+    
+</body>
+</html>
